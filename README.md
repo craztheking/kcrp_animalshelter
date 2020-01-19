@@ -1,4 +1,4 @@
-AnimalShelter
+AnimalShelter V1.0
 https://github.com/CrazTheKing
 
 If anyone knows how to add whistle please let me know.
