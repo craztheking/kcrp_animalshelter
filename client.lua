@@ -1,4 +1,4 @@
-local keys = { ['G'] = 0x760A9C6F, ['S'] = 0xD27782E3, ['W'] = 0x8FD015D8, ['H'] = 0x24978A28, ['G'] = 0x5415BE48, ["ENTER"] = 0xC7B5340A, ['E'] = 0xDFF812F9 }
+local keys = { ['G'] = 0x760A9C6F, ['S'] = 0xD27782E3, ['W'] = 0x8FD015D8, ['H'] = 0x24978A28, ['G'] = 0x5415BE48, ["ENTER"] = 0xC7B5340A, ['E'] = 0xDFF812F9, ["J"] = 0xF3830D8E }
 
 local pressTime = 0
 local pressLeft = 0
@@ -204,7 +204,7 @@ Citizen.CreateThread(function()
 			end
 		end
 
-		if IsControlJustReleased( 0, 0xF3830D8E) then
+		if IsControlJustReleased( 0, keys["J"]) then
 			pressLeft = GetGameTimer()
 			pressTime = pressTime + 1
 		end
