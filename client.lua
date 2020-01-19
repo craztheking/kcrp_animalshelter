@@ -88,7 +88,7 @@ local dogs = {
 		['Desc'] = "Level Required : ~pa~0",
 		['Param'] = {
 			['Price'] = 15,
-			['Model'] = "A_C_Cat_01",
+			['Model'] = "A_C_DogAmericanFoxhound_01",
 			['Level'] = 2
 		}
 	},
@@ -98,7 +98,7 @@ local dogs = {
 		['Desc'] = "Level Required : ~pa~0",
 		['Param'] = {
 			['Price'] = 15,
-			['Model'] = "A_C_DogAmericanFoxhound_01",
+			['Model'] = "A_C_Cat_01",
 			['Level'] = 2
 		}
 	},
