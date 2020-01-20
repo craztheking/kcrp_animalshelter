@@ -30,9 +30,10 @@ Current workaround for blip being seen across map:
 add
 
 
-,
+	,
 	--Animal Shelters
 	{ name = 'Animal Shelter', sprite = 1475879922, x = -273.51, y = 689.26, z = 113.41 }
+	
 
 to line 26 , or your last set "ropas" (clothing) coordiante of redm_blips/client.lua
 
