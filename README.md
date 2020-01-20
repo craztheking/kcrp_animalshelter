@@ -39,11 +39,11 @@ to line 26 , or your last set "ropas" (clothing) coordiante of redm_blips/client
 
 and then remove
 
-local function CreateBlips ( )
+	local function CreateBlips ( )
 	for k,v in pairs(Config.Coords) do
-		local blip = Citizen.InvokeNative( 0x554d9d53f696d002, -515518185, v.x, v.y, v.z)
+	local blip = Citizen.InvokeNative( 0x554d9d53f696d002, -515518185, v.x, v.y, v.z)
 	end
-end
+	end
 
 
 from line 108 of kcrp_animalshelter/client.lua
