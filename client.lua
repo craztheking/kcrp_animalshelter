@@ -1,5 +1,9 @@
 local keys = { ['G'] = 0x760A9C6F, ['S'] = 0xD27782E3, ['W'] = 0x8FD015D8, ['H'] = 0x24978A28, ['G'] = 0x5415BE48, ["ENTER"] = 0xC7B5340A, ['E'] = 0xDFF812F9, ["J"] = 0xF3830D8E }
 
+local blips = {
+    { name = 'Animal Shelter', sprite = -1646261997,x = -273.51, y = 689.26, z = 113.41 }
+}
+
 local pressTime = 0
 local pressLeft = 0
 
@@ -105,11 +109,14 @@ local dogs = {
 
 }
 
-local function CreateBlips ( )
-	for k,v in pairs(Config.Coords) do
-		local blip = Citizen.InvokeNative( 0x554d9d53f696d002, -515518185, v.x, v.y, v.z)
-	end
-end
+Citizen.CreateThread(function()
+	for _, info in pairs(blips) do
+        local blip = N_0x554d9d53f696d002(1664425300, info.x, info.y, info.z)
+        SetBlipSprite(blip, info.sprite, 1)
+		SetBlipScale(blip, 0.2)
+		Citizen.InvokeNative(0x9CB1A1623062F402, blip, info.name)
+    end  
+end)
 
 local function GiveAllAttitude( entity )
     -- | SET_ATTRIBUTE_POINTS | --
