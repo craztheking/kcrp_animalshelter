@@ -1,8 +1,6 @@
 AnimalShelter 1.0v
 https://github.com/CrazTheKing
 
-If anyone knows how to add whistle please let me know.
-
 =================================================
 
 Installation :
@@ -18,7 +16,9 @@ to add more shelters you need to add vector coords in config.lua and local blips
 =================================================
 
 Updates [newest first]:
+
 Changed sprite to "Animal"
+
 Sprite no longer visible across the map / shows locally
 
 =================================================
@@ -30,6 +30,7 @@ Usage :
 2. Call Pet by pressing (J).
 
 3. If your Pet is to far press J (1 time) to reset call event.
+
 =================================================
 
 Recreated from:
